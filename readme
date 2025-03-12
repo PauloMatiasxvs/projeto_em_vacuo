@@ -1,0 +1,55 @@
+# Simulação Multidimensional de Partículas
+
+Oi, tudo bem? Esse é o meu projeto mais legal até agora: uma simulação de 50 partículas num espaço multidimensional, projetado em 3D! Passei um tempão mexendo nisso pra ficar bonito e impressionante. Usei Python com PyOpenGL e Pygame pra criar algo que parece saído de um filme de ficção científica.
+
+## O que tá rolando?
+Fiz uma simulação onde:
+- 50 partículas flutuam num cubo 12x12x12, com trilhas de luz e cores que mudam o tempo todo.
+- Elas se movem num vácuo, sem gravidade ou fricção, só colidindo entre si e com as bordas.
+- Adicionei um efeito de "dimensões extras" que faz elas pulsarem e mudarem de cor, como se fossem influenciadas por algo além do 3D.
+- O cubo tem bordas brilhantes que mudam de cor, e o fundo é um espaço estrelado com estrelas que se movem e piscam.
+- Dá pra girar a câmera com o mouse, pausar com espaço e ajustar a velocidade com as setas.
+
+## Como funciona?
+Usei Pygame pra janela e PyOpenGL pra renderizar tudo em 3D. A mágica tá nos detalhes:
+- **Partículas**: Cada uma tem uma trilha que esmaece, cor que oscila e tamanho que pulsa com o tempo.
+- **Dimensões Extras**: Usei funções seno e cosseno pra simular isso, mexendo no raio e na cor.
+- **Visual**: O cubo tem um gradiente nas bordas, e o fundo estrelado tem 200 estrelas animadas.
+- **Controles**: Mouse pra olhar em volta, espaço pra pausar, setas pra acelerar ou desacelerar.
+
+O código tá em `multi_particle_sim.py` e tá cheio de comentários pra mostrar como eu montei tudo.
+
+## Como rodar
+É fácil, mas precisa instalar umas coisas:
+1. Tenha Python instalado (usei a versão 3.9, mas deve rodar em outras).
+2. Instale as bibliotecas:
+pip install pygame PyOpenGL PyOpenGL_accelerate
+
+text
+
+Recolher
+
+Encapsular
+
+Copiar
+3. Baixe o `multi_particle_sim.py` desse repositório.
+4. Rode no terminal:
+python multi_particle_sim.py
+
+text
+
+Recolher
+
+Encapsular
+
+Copiar
+5. Vai abrir uma janela com as partículas dançando no cubo! Usa o mouse pra girar, espaço pra pausar e setas pra mudar a velocidade.
+
+## Detalhes técnicos
+- **Cubo**: Tamanho 12x12x12 (de -6 a 6 em x, y, z).
+- **Partículas**: 50 esferas com raio base 0.25, massa 1.
+- **Velocidade**: Começam entre -0.3 e 0.3 em cada eixo.
+- **Cores**: RGB dinâmico com oscilações baseadas no tempo.
+- **Estrelas**: 200 pontos com movimento e brilho variável.
+
+Deixei o código bem comentado pra quem quiser entender o passo a passo!
