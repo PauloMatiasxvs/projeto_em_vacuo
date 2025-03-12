@@ -32,9 +32,9 @@ Recolher
 Encapsular
 
 Copiar
-3. Baixe o `multi_particle_sim.py` desse repositório.
+3. Baixe o `vacuo.py` desse repositório.
 4. Rode no terminal:
-python multi_particle_sim.py
+python vacuo.py
 
 text
 
