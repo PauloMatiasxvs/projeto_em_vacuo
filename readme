@@ -17,7 +17,7 @@ Usei Pygame pra janela e PyOpenGL pra renderizar tudo em 3D. A mágica tá nos d
 - **Visual**: O cubo tem um gradiente nas bordas, e o fundo estrelado tem 200 estrelas animadas.
 - **Controles**: Mouse pra olhar em volta, espaço pra pausar, setas pra acelerar ou desacelerar.
 
-O código tá em `multi_particle_sim.py` e tá cheio de comentários pra mostrar como eu montei tudo.
+O código tá em `vacuo.py` e tá cheio de comentários pra mostrar como eu montei tudo.
 
 ## Como rodar
 É fácil, mas precisa instalar umas coisas:
